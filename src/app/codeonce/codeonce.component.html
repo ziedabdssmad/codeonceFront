@@ -1,0 +1,17 @@
+<div class="container">
+    <form [formGroup]="InputForm" (ngSubmit)="submit()">
+        <div class="form-group col-md-8">
+            <label for="colFormLabel" class="col-sm-3 col-form-label">Write something</label>
+            <div class="col-sm-9">
+                <input class="form-control" formControlName="phrase" id="colFormLabel" placeholder="input">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-primary">Send</button>
+        </div>
+    </form>
+    <div>{{occurences}}</div>
+
+
+
+</div>
